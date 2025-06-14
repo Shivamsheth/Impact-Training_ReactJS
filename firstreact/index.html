@@ -21,7 +21,7 @@
         const h5 = React.createElement("h5", {}, "Hi, how are ");
         const h6 = React.createElement("h6", {}, ", how are you?");
 
-        const img = React.createElement("img", { src: "./logo.png", });
+        const img = React.createElement("img", { src: "./logo.png ", height: "300px", width: "300px" });
         const tbl = React.createElement(
             "table",
             { border: "1px" },
@@ -40,20 +40,20 @@
             )
         );
         const form = React.createElement("form", {},
-         React.createElement("label", {},"Enter Name",
-            React.createElement("input",{type:"text"},)
-         ),
-        React.createElement("label", {},"Enter Name",
-            React.createElement("input",{type:"text"},)
-         ),
-         React.createElement("label", {},"Enter Name",
-            React.createElement("textarea",{},)
-         )
+            React.createElement("label", {}, "Enter Name",
+                React.createElement("input", { type: "text" },)
+            ),
+            React.createElement("label", {}, "Enter Name",
+                React.createElement("input", { type: "text" },)
+            ),
+            React.createElement("label", {}, "Enter Name",
+                React.createElement("textarea", {},)
+            )
         );
-        
 
 
-        const container = React.createElement("div", {}, [h1, h2, h3, h4, h5, h6], img, tbl,form);
+
+        const container = React.createElement("div", {}, [h1, h2, h3, h4, h5, h6], img, tbl, form);
 
         const targetDiv = document.getElementById("root");
         const root = ReactDOM.createRoot(targetDiv);
